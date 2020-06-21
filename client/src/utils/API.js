@@ -6,12 +6,8 @@ export default {
     return axios.get("/api/books");
   },
   // Retrieve books from the Google Books api
-  getSearch: function(title) {
-    return axios.get("https://www.googleapis.com/books/v1/volumes?q=" + title + "&maxResults=20")
-  },
-  // Gets the book with the given id
-  getBook: function(id) {
-    return axios.get("/api/books/" + id);
+  getSearch: function(query) {
+    return axios.get("https://www.googleapis.com/books/v1/volumes?q=" + query)
   },
   // Deletes the book with the given id
   deleteBook: function(id) {
