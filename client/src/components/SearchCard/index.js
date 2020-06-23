@@ -11,23 +11,22 @@ function InputCard() {
   function search(e) {
     e.preventDefault();
     API.getSearch(inputRef.current.value).then(res => {
-      console.log("SEARCHING", inputRef.current.value);
-      console.log(res.data.items);
+      // console.log("SEARCHING", inputRef.current.value);
+      // console.log(res.data.items);
       var books = res.data.items.map(book => {
         return ({
           authors: book.volumeInfo.authors ? book.volumeInfo.authors.join(" ") : "",
           description: book.volumeInfo.description ? book.volumeInfo.description : "",
           image: book.volumeInfo.imageLinks ? book.volumeInfo.imageLinks.thumbnail : "",
           link: book.volumeInfo.previewLink ? book.volumeInfo.previewLink : "",
-          title: book.volumeInfo.title ? book.volumeInfo.title : "",
-          date: book.volumeInfo.publishedDate ? book.volumeInfo.publishedDate : ""
+          title: book.volumeInfo.title ? book.volumeInfo.title : ""
         });
       });
       dispatch({
         type: SET_SEARCH_RESULTS,
         searchResults: books
       });
-      console.log(books);
+      // console.log(books);
     });
   }
 
