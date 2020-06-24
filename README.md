@@ -24,6 +24,8 @@ This application is a full MERN app to search for and save books from Google Boo
 
 * [Questions](#questions)
 
+* [Comments](#comments)
+
 ## Installation
 
 To run on a local system, clone the repository into the directory of choice, then run see the boilerplate README for directions.
@@ -67,3 +69,6 @@ At this time, there are no tests to be run.
 <img src="https://avatars3.githubusercontent.com/u/59231957?v=4" alt="avatar" style="border-radius: 16px" width="30" />
 
 If you have any questions about the repo, open an issue or contact [AJFree458](https://api.github.com/users/AJFree458) directly at rthr.frmn@gmail.com.
+
+## Comments
+Found in portfolio on [ajfree458.github.io/opus2_portfolio/](https://ajfree458.github.io/opus2_portfolio/)
